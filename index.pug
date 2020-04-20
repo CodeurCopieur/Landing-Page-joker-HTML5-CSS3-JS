@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+html(lang="fr")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css")
+    link(rel="stylesheet", href="index.css")
+    title Movie Landing Page Website Design | Html CSS & Javascript
+  body
+    header
+      .container
+        a.header-logo(href="#") joker
+        .hamburger 
+          //i.icon.ion-md-menu
+          .line
+          .line
+
+        ul.hdr-navList
+          .hdr-iconsClose
+            i.icon.ion-md-close
+          each val in ['home', 'about', 'movie', 'contact']
+            li.hdr-navItem
+              a.hdr-navLink(href="")= val
+
+    .banner#blur
+      .slide
+      .container
+        .content
+          h2 Put on a 
+            span Happy  
+            |face
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quo, eaque, a, dicta quidem fugiat facere corrupti voluptas aperiam odio enim sunt ipsam dolorum odit minima fuga delectus voluptate voluptatem veritatis soluta accusantium quae maxime quibusdam doloremque!
+
+          a(href="#").play
+            i.icon.ion-md-play
+            span Watch Trailer
+        .nav-social-icons
+          ul.nav-list
+            each val in ['ion-logo-github','ion-logo-instagram', 'ion-logo-twitter']
+              li.nav-item
+                a(href="#").nav-link
+                  i.icon(class=val)
+
+    #popup
+        .popup-iconsClose
+            i.icon.ion-md-close
+        iframe(width="560" height="315" src="https://www.youtube.com/embed/_LUWnjT3iks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+    
+    script(src="index.js")
+      
