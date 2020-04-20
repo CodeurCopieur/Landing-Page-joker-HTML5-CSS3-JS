@@ -182,6 +182,7 @@ body {
           align-items: center;
           margin-bottom: 2em; }
           body .banner .container .content .play .icon {
+            cursor: pointer;
             height: 50px;
             width: 50px;
             display: -webkit-box;
